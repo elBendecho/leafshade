@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Readex Pro';
+    src: url('assets/fonts/ReadexPro.ttf');
+}
+
+* {margin: 0; padding: 0;}
+
+/* Desktop */
+
+body{
+    background-color: #140e1f;
+    cursor: default;
+    user-select: none;
+}
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: rgb(30, 30, 30);}
+::-webkit-scrollbar-thumb { background: rgb(50, 50, 50); border-radius: 10px;}
+::-webkit-scrollbar-thumb:hover { background: rgb(70, 70, 70); }
+
+p{
+    font-family: 'Readex Pro', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.on-scroll{
+    opacity: 0%;
+    transform: translateX(-10px);
+    transition: 1s;
+}
+
+.in-frame{
+    opacity: 100%;
+    transform: none;
+}
+
+#ls-logo{
+    position: relative;
+    width: 200px;
+}
+
+#login-button{
+    position: relative;
+    width: 30px;
+
+    image-rendering: pixelated;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#login-button:hover{
+    transform: scale(120%);
+}
+
+#menu{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+
+    background-color: #1a302e;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-button{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    color: rgb(152, 230, 205);
+}
+
+.current-page{
+    color: rgb(89, 194, 162);
+}
+
+#backdrop-box{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-bottom: 10px solid #1a302e;
+}
+
+#backdrop-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#mc-backdrop{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info-box{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.info-header{
+    position: absolute;
+    left: 25%;
+    top: 100px;
+
+    color: white;
+    font-size: 40px;
+}
+
+.info-text{
+    position: absolute;
+    left: 25%;
+    top: 200px;
+
+    color: white;
+    font-size: 15px;
+}
+
+#footer{
+    position: relative;
+    width: 100%;
+    height: 80px;
+
+    background-color: #1a302e;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-entry{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-entry-title{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.footer-selection{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    background-color: #58a59f;
+    padding: 10px;
+    padding-left: 25px;
+    border-radius: 15px;
+    transform: translate(-50%, -90%);
+
+    visibility: hidden;
+    opacity: 0%;
+    transition: 0.2s;
+}
+
+.footer-entry-title:hover + .footer-selection{
+    visibility: visible;
+    opacity: 100%;
+    transform: translate(-50%, -100%);
+}
+
+.footer-selection:hover{
+    visibility: visible;
+    opacity: 100%;
+    transform: translate(-50%, -100%);
+}
+
+.footer-sub-entry{
+    color: white;
+    text-align: left;
+    font-size: 15px;
+    line-height: 25px;
+
+    display: list-item;
+    list-style-image: url('assets/leaf-button.png');
+    cursor: pointer;
+}
+
+.footer-sub-entry:hover{
+    color: rgb(152, 230, 205);
+}
+
+#copyright-claim{
+    position: relative;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    background-color: #122221;
+    font-size: 15px;
+    color: rgb(199, 199, 199);
+    text-align: center;
+}
+
+/* Tablet horizontal */
+
+@media screen and (max-width: 1100px){
+
+}
+
+/* Tablet vertical */
+
+@media screen and (max-width: 900px){
+   
+}
+
+/* Mobile */
+
+@media screen and (max-width: 600px){
+   
+}
